@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CNN Flask Demo - Experience the power of Convolutional Neural Networks with our interactive image classification demo. Built with Python, TensorFlow, and Flask.">
+    <meta name="keywords" content="CNN, Convolutional Neural Networks, Deep Learning, Image Classification, Flask, Python, AI, Machine Learning">
+    <meta name="author" content="CNN Flask Demo">
+    
+    <title>CNN Flask Demo | AI-Powered Image Classification</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-icon"><span>🧠</span></div>
+            CNN Demo
+        </div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Powered by Deep Learning
+            </div>
+            <h1>
+                Intelligent Image<br>
+                <span class="gradient-text">Classification with CNN</span>
+            </h1>
+            <p class="hero-description">
+                Experience the power of Convolutional Neural Networks. Upload any image and watch our AI model classify it in real-time with stunning accuracy.
+            </p>
+            <div class="hero-buttons">
+                <a href="#demo" class="btn btn-primary">
+                    🚀 Try Demo
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    📖 Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>Why Choose Our CNN Model?</h2>
+            <p>Built with cutting-edge technology for exceptional performance</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>Get predictions in milliseconds. Our optimized model delivers real-time results without compromising accuracy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>High Accuracy</h3>
+                <p>Trained on millions of images, our CNN achieves industry-leading accuracy across diverse image categories.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure & Private</h3>
+                <p>Your images are processed securely and never stored. Privacy is our top priority.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Easy Integration</h3>
+                <p>Simple REST API makes it easy to integrate our CNN model into your applications.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Detailed Analytics</h3>
+                <p>Get confidence scores and top predictions with detailed probability distributions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3>Continuous Learning</h3>
+                <p>Our model is regularly updated with new training data to improve performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section" id="demo">
+        <div class="demo-container">
+            <div class="demo-content">
+                <h2>See the Neural Network in Action</h2>
+                <p>Our Convolutional Neural Network uses multiple layers of filters to extract features from images, enabling accurate classification across thousands of categories.</p>
+                <a href="#" class="btn btn-primary">
+                    📤 Upload Image
+                </a>
+            </div>
+            <div class="demo-visual">
+                <div class="neural-network">
+                    <div class="layer">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <span class="layer-label">Input</span>
+                    </div>
+                    <div class="layer">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <span class="layer-label">Conv 1</span>
+                    </div>
+                    <div class="layer">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <span class="layer-label">Conv 2</span>
+                    </div>
+                    <div class="layer">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <span class="layer-label">Dense</span>
+                    </div>
+                    <div class="layer">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <span class="layer-label">Output</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="about">
+        <div class="stat-item">
+            <div class="stat-number">99.2%</div>
+            <div class="stat-label">Accuracy Rate</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">50ms</div>
+            <div class="stat-label">Avg Response Time</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Image Categories</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">10M+</div>
+            <div class="stat-label">Images Processed</div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="cta-box">
+            <h2>Ready to Get Started?</h2>
+            <p>Experience the power of AI-driven image classification. Upload your first image and see the magic happen.</p>
+            <a href="#demo" class="btn btn-primary">
+                🎯 Start Classifying
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            © 2026 CNN Flask Demo. Built with ❤️ using Python & TensorFlow
+        </div>
+        <div class="footer-links">
+            <a href="#">Documentation</a>
+            <a href="#">API Reference</a>
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
